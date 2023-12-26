@@ -1,0 +1,48 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+@import url('https://fonts.cdnfonts.com/css/inter');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.topContainer{
+    background-color: #ed007f;
+}
+.nav-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding: 0 20px;
+    
+    
+}
+.left ul{
+    display: flex;
+    align-items: center;
+    
+}
+.left ul li{
+    list-style: none;
+    padding: 6px 10px;
+}
+.left ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: x-small;
+}
+.right ul{
+    display: flex;
+    align-items: center;
+}
+.right ul li{
+    list-style: none;
+    padding: 6px 10px;
+}
+.right ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+}
