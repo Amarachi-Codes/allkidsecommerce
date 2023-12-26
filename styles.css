@@ -72,6 +72,8 @@ nav .nav-left .search{
     height: 28px;
     margin-right: 10px;
     padding: 0 8px;
+    border: 1px solid white;
+    border-radius: 4px;
 
 }
 nav .nav-left button{
@@ -80,7 +82,9 @@ nav .nav-left button{
     margin: 0 20px 0 0;
     background-color: #94004f;
     color: white;
-    border: none;
+    border: 1px solid;
+    border-color: #94004f;
+    border-radius: 4px;
     
 }
 .sub-nav{
