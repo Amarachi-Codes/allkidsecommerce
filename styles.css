@@ -9,6 +9,7 @@
 }
 .topContainer{
     background-color: #94004f;
+    /* background-color: #ff85cb; */
 }
 .nav-top{
     display: flex;
@@ -47,8 +48,9 @@
     font-size: x-small;
 }
 .nav-container{
-    background-color:  #ed007f;
-    color: white;
+    /* background-color:  #ed007f; */
+    background-color: #6acdee ;
+    color: #000;
 }
 nav{
     
@@ -87,7 +89,7 @@ nav .nav-left button{
 }
 .nav-bottom a{
     text-decoration: none;
-    font-size: small;
+    font-size: x-small;
     color: white;
     padding: 10px 8px;
     margin-right: 10px;
