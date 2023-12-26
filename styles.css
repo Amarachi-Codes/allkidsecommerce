@@ -139,3 +139,6 @@ nav .nav-left button{
     background-color: #FF3E58;
     color: black;
 }
+.dashboard h3{
+    padding: 20px 30px;
+}
