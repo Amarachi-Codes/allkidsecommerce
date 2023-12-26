@@ -44,5 +44,40 @@
 .right ul li a{
     text-decoration: none;
     color: white;
-    font-size: smaller;
+    font-size: x-small;
+}
+.nav-container{
+    background-color: #000;
+    color: white;
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 95%;
+}
+nav .nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+nav .nav-left .search{
+    width: 320px;
+    height: 28px;
+    margin-right: 10px;
+    padding: 0 8px;
+
+}
+nav .nav-left button{
+    height: 28px;
+    padding: 0 10px;
+    margin: 0 20px 0 0;
+}
+.sub-nav{
+    padding-right: 20px;
+    font-size: small;
 }
