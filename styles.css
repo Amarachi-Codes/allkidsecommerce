@@ -83,46 +83,56 @@ nav .nav-left button{
 }
 .nav-bottom{
     background-color: #000;
-    padding: 20px 30px;
+    padding: 10px 30px;
 }
 .nav-bottom a{
     text-decoration: none;
     font-size: small;
-    color: #000;
-    padding: 6px 8px;
+    color: white;
+    padding: 10px 8px;
     margin-right: 10px;
-    border-radius: 8px;
+    
 }
-.nav-bottom a:nth-child(1):hover{
+/* .nav-bottom a:nth-child(1):hover{
     background-color: #fff;
-}
-.nav-bottom a:nth-child(1){
+} */
+.nav-bottom a:nth-child(1):hover{
     background-color: #ff432e;
+    color: black;
 }
-.nav-bottom a:nth-child(2){
+.nav-bottom a:nth-child(2):hover{
     background-color: #fdef14;
+    color: black;
 }
-.nav-bottom a:nth-child(3){
+.nav-bottom a:nth-child(3):hover{
     background-color: #ff85cb;
+    color: black;
 }
-.nav-bottom a:nth-child(4){
+.nav-bottom a:nth-child(4):hover{
     background-color: #4aa8db;
+    color: black;
 }
-.nav-bottom a:nth-child(5){
+.nav-bottom a:nth-child(5):hover{
     background-color: 	#b1eb00;
+    color: black;
 }
-.nav-bottom a:nth-child(6){
-    background-color: 		#FF3F8E;
+.nav-bottom a:nth-child(6):hover{
+    background-color:#FF3F8E;
+    color: black;
 }
-.nav-bottom a:nth-child(7){
+.nav-bottom a:nth-child(7):hover{
     background-color: #4aa8db;
+    color: black;
 }
-.nav-bottom a:nth-child(8){
+.nav-bottom a:nth-child(8):hover{
     background-color: #ff85cb;
+    color: black;
 }
-.nav-bottom a:nth-child(9){
+.nav-bottom a:nth-child(9):hover{
     background-color: 	#b1eb00;
+    color: black;
 }
-.nav-bottom a:nth-child(10){
+.nav-bottom a:nth-child(10):hover{
     background-color: #FF3E58;
+    color: black;
 }
