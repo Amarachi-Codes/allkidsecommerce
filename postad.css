@@ -7,9 +7,28 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+.img_cartoon{
+    width: 200px;
+    height: 200px;
+    position: relative;
+   bottom: 90px; 
+   transform: rotate(-45deg);
+   left: 40px;
+   
+}
+.img_cartoon2{
+    width: 200px;
+    height: 200px;
+    position: relative;
+   top: 290px;
+   right: 60px;
+   transform: rotate(45deg);
+   
+}
 .body_wrapper{
    display:flex;
    margin: 100px 0;
+   
 }
 .body_container{
     width: 60%; 
