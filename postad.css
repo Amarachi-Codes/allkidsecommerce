@@ -46,9 +46,7 @@
     border: 1px solid gainsboro;
     padding:16px 20px
 }
-.null{
-    visibility: hidden;
-}
+
 .form-heading .clear{
     font-size: small;
     
