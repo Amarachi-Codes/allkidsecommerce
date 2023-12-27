@@ -10,6 +10,8 @@
 .topContainer{
     
     background-color: #FA4EAB;
+    position: sticky;
+    top:0
     
 }
 .nav-top{
@@ -53,6 +55,8 @@
     /* background-color: #6acdee ; 
     background-color: #FFF2F9; */
     color: #000;
+    position: sticky;
+    top:0
 }
 .borderline{
     border-bottom: 2px solid #323232;
@@ -99,6 +103,8 @@ nav .nav-left button{
 .nav-bottom{
     background-color:  #333333;
     padding: 10px 30px;
+    position: sticky;
+    top:0
 }
 .nav-bottom a{
     text-decoration: none;
