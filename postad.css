@@ -13,7 +13,8 @@
 }
 .body_container{
     width: 60%; 
-    background-color: #FE83C6;
+    /* background-color: #FE83C6; */
+    background-color: #FA4EAB;
     margin: auto;
 
 }
@@ -66,4 +67,18 @@ margin: 0 10px;
     background-color: #323232;
     color: white;
     margin-bottom: 20px;
+}
+.addphoto p{
+    font-size: small;
+    padding-top: 8px;
+}
+.addphoto h5{
+    padding-top: 6px;
+}
+.formats{
+    font-size: small;
+    padding-top: 10px;
+}
+.file{
+    margin-top: 12px;
 }
