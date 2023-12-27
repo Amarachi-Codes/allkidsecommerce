@@ -8,8 +8,9 @@
     font-family: 'Inter', sans-serif;
 }
 .topContainer{
-    background-color: #94004f;
-    /* background-color: #ff85cb; */
+    
+    background-color: #FA4EAB;
+    
 }
 .nav-top{
     display: flex;
@@ -31,7 +32,7 @@
 }
 .left ul li a{
     text-decoration: none;
-    color: white;
+    color: #000;
     font-size: x-small;
 }
 .right ul{
@@ -44,12 +45,13 @@
 }
 .right ul li a{
     text-decoration: none;
-    color: white;
+    color: #000;
     font-size: x-small;
 }
 .nav-container{
-    /* background-color:  #ed007f; */
-    background-color: #6acdee ;
+    background-color:  #b1eb00;
+    /* background-color: #6acdee ; */
+    /* background-color: #FFF2F9; */
     color: #000;
 }
 nav{
@@ -80,10 +82,10 @@ nav .nav-left button{
     height: 28px;
     padding: 0 10px;
     margin: 0 20px 0 0;
-    background-color: #94004f;
+    background-color: #323232;
     color: white;
     border: 1px solid;
-    border-color: #94004f;
+    border-color: #323232;
     border-radius: 4px;
     
 }
@@ -92,7 +94,7 @@ nav .nav-left button{
     font-size: small;
 }
 .nav-bottom{
-    background-color: #333333;
+    background-color:  #333333;
     padding: 10px 30px;
 }
 .nav-bottom a{
@@ -148,5 +150,6 @@ nav .nav-left button{
     color: black;
 }
 .dashboard h3{
-    padding: 20px 30px;
+    padding: 30px 30px;
+    text-align: center;
 }

@@ -1,0 +1,64 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+@import url('https://fonts.cdnfonts.com/css/inter');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+   display:flex;
+   margin: 100px 0;
+}
+.body_container{
+    width: 60%; 
+    background-color: #FE83C6;
+    margin: auto;
+
+}
+
+.form-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+    padding:16px 20px
+}
+.null{
+    visibility: hidden;
+}
+.form-heading .clear{
+    font-size: small;
+    color: #;
+}
+ /* .category_wrapper{
+    padding: 30px 0 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
+ .form-control{
+padding: 4px;
+width: 100%;
+margin-top: 20px;
+
+} 
+.form_body{
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form_wrapper{
+padding: 8px;
+width: 50%;
+margin: 0 10px;
+}
+.form_submit{
+    background-color: #323232;
+    color: white;
+    margin-bottom: 20px;
+}
