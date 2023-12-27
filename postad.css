@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-body{
+.body_wrapper{
    display:flex;
    margin: 100px 0;
 }
