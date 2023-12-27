@@ -38,6 +38,7 @@
 
 }
 
+
 .form-heading{
     display: flex;
     align-items: center;
@@ -50,16 +51,18 @@
 }
 .form-heading .clear{
     font-size: small;
-    color: #323232;
+    
     cursor: pointer;
-    background-color: white;
+    
     padding: 4px 10px;
     border-radius: 4px;
+    background-color: #323232;
+    color: #fff;
 
 }
 .form-heading .clear:hover{
-    background-color: #323232;
-    color: #fff;
+    color: #323232;
+    background-color: white;
 }
  /* .category_wrapper{
     padding: 30px 0 16px 0;
