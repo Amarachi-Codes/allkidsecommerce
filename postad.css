@@ -90,6 +90,7 @@ margin: 0 10px;
     background-color: #323232;
     color: white;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .addphoto p{
     font-size: small;
