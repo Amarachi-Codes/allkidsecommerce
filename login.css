@@ -1,0 +1,54 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+@import url('https://fonts.cdnfonts.com/css/inter');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.form_wrapper{
+    background-color:#323232;
+    color: #FA4EAB;
+    width: 50%;
+    
+}
+.form_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control{
+    padding: 6px;
+    width: 380px;
+    margin-top: 20px;
+    
+    } 
+    .login{
+        background-color: #FA4EAB;
+        font-weight: bold;
+    }
+    .showPass{
+        font-size: small;
+        padding: 12px 0;
+    }
+    .newTo_kiddo{
+        font-size: small;
+        padding: 10px 0 50px 0;
+    }
+    .newTo_kiddo span{
+        padding-left: 4px;
+        color: #b1eb00;
+        
+    }
+    .body_wrapper{
+        display: flex;
+        place-content: center;
+        margin: 20vh 0;
+    }
+    .welcome{
+    text-align: center;
+    padding: 40px 0 20px 0;
+    }
+    

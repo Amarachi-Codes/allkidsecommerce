@@ -5,22 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
-    <div>
-        <form action="">
-            <input type="text" name="" id="" placeholder="Enter Username">
-            <input type="text" name="" id="" placeholder="Enter Password">
-            <div>
-                <input type="checkbox" name="" id="">
-                <span>Show Password</span>
-                <span>Forgot Password?</span>
-            </div>
-            <button>Login</button>
-            <p>New to Kiddo?<span>Sign Up Here</span></p>
-        </form>
+
+<div class="body_wrapper">
+    <div class="form_wrapper">
+        <div class="form_container">
+            <form action="">
+                <div class="welcome">
+                    <p>Welcome to <span>Kiddo</span></p>
+                </div>
+                <input type="text" name="" id="" class="form-control" placeholder="Enter Username"><br>
+                <input type="text" name="" id="" class="form-control" placeholder="Enter Password">
+                <div class="showPass">
+                    <input type="checkbox" name="" id="">
+                    <span>Show Password</span>
+                    <span>Forgot Password?</span>
+                </div>
+                <button class="form-control login">Login</button>
+                <p class="newTo_kiddo">New to Kiddo?<span>Sign Up Here</span></p>
+            </form>
+        </div>
     </div>
+</div>
     <script src="script.js"></script>
 </body>
 
