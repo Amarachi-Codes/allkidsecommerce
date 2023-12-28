@@ -25,6 +25,12 @@
     margin-top: 20px;
     
     } 
+    .welcome .fa-user{
+        width: 40px;
+        height: 20px;
+        text-align: center;
+       margin-bottom: 16px;
+    }
     .login{
         background-color: #FA4EAB;
         font-weight: bold;
@@ -42,7 +48,7 @@
     }
     .newTo_kiddo{
         font-size: small;
-        padding: 10px 0 50px 0;
+        padding: 10px 0 70px 0;
     }
     .newTo_kiddo span{
         padding-left: 4px;
@@ -55,7 +61,7 @@
     .body_wrapper{
         display: flex;
         place-content: center;
-        margin: 20vh 0;
+        margin: 12vh 0;
     }
     .welcome{
     text-align: center;
