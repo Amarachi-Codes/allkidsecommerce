@@ -48,7 +48,7 @@
                 <p class="clear">Clear</p>
             </div>
 
-            <form action="" class="form_body">
+            <form action="" class="form_body" id="form">
                 <div class="form_wrapper">
 
                     <div class="">
@@ -66,21 +66,9 @@
                             <option value="Toys">Toys</option>
                         </select>
                     </div>
-                    <div>
-
-                        <select name="location" id="location" class="form-control" required>
-                            <option value="select location"  selected>Select Location</option>
-                            <option value="Abuja">Abuja</option>
-                            <option value="Port Harcourt">Port Harcourt</option>
-                            <option value="Lagos">Lagos</option>
-                            <option value="Owerri">Owerri</option>
-                            <option value="Calabar">Calabar</option>
-                            <option value="Enugu">Enugu</option>
-                            <option value="Onitsha">Onitsha</option>
-                            <option value="Ibadan">Ibadan</option>
-                            <option value="Kaduna">Kaduna</option>
-                        </select>
-                    </div>
+                    <input type="text" name="productname" id="productname" class="form-control" placeholder="Product Name">
+                    <input type="text" name="price" id="productprice" class="form-control" placeholder="Product Price">
+                    <input type="text" name="vendorname" id="vendorname" class="form-control" placeholder="Vendor Name">
                     <div class="addphoto">
                         <p>Add photo</p>
                         <h5>Add at least 1 photo for this category</h5>
@@ -90,11 +78,10 @@
                         </p>
                     </div>
                     <div>
-                        <input type="file" class="file" id="">
+                        <input type="file" class="file" id="img">
                     </div>
                     <p class="formats">Supported formats are .jpg, .gif and .png, 5MB max</p>
-                    <input type="url" name="url" id="url" class="form-control" placeholder="Link to Youtube video">
-                    <button class="form-control form_submit">Submit</button>
+                    <button class="form-control form_submit" id="submit">Submit</button>
                 </div>
             </form>
         </div>
