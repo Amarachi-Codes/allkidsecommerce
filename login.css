@@ -23,6 +23,8 @@
     padding: 6px;
     width: 380px;
     margin-top: 20px;
+    border-radius: 4px;
+    border: none;
     
     } 
     .welcome .fa-user{
@@ -34,7 +36,7 @@
     .login{
         background-color: #FA4EAB;
         font-weight: bold;
-        border: none;
+        
     }
     .showPass{
         font-size: small;
