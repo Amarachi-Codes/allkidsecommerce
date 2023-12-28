@@ -34,6 +34,7 @@
     .login{
         background-color: #FA4EAB;
         font-weight: bold;
+        border: none;
     }
     .showPass{
         font-size: small;

@@ -10,7 +10,7 @@ if(productname && productprice && vendorname && image){
     const product ={
         id:generateId(),
         pName: productname,
-        price: productprice,
+        price: "N" + productprice,
         vName:vendorname,
         img:image
     }
