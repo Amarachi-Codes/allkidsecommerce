@@ -54,6 +54,7 @@
      background-color:  #b1eb00;
     /* background-color: #6acdee ; */
     /* background-color: #FFF2F9;  */
+    /* background-color: #c02415; */
     
     color: #000;
     position: sticky;
@@ -163,7 +164,14 @@ nav .nav-left button{
     background-color: #FF3E58;
     color: black;
 }
-.dashboard h3{
+.dashboard_title h3{
     padding: 30px 30px;
     text-align: center;
+}
+
+#card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: #000;
+    gap: 10px;
 }
