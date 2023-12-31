@@ -33,10 +33,27 @@
     text-decoration: none;
     color: #000;
 }
-/* .app_container .navbar ul{
-    gap: 16px;
-} */
+.app_container .navbar ul{
+   padding: 0 10px;
+   margin-top: 10px;
+}
+.app_container .navbar ul li{
+    list-style: none;
+}
 .app_container .navbar ul li a{
 text-decoration: none;
-color: #212121;
+color: #535353;
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 5px 10px;
+font-weight: 500;
+font-size: 14px;
+margin-bottom: 5px;
+border-radius: 5px;
+transition: 0.3s ease-out;
+}
+.app_container .navbar ul li a:hover{
+    background-color: rgb(232, 232, 232);
+    
 }
