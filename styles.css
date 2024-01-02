@@ -191,3 +191,19 @@ nav .nav-left button{
 .dashboard{
     margin: 24px 68px;
 }
+
+
+@media screen and (max-width:912px) {
+    .nav-top{
+        width: 100%;
+    }
+    .left ul{
+        display: none; 
+    }
+    .right ul{
+        display: none;
+    }
+    .first_hamburger {
+        padding: 8px;
+    }
+}
