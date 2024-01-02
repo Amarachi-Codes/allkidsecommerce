@@ -23,6 +23,12 @@
     
     
 }
+.nav-top .top_search{
+    display: none;
+}
+.nav-top button{
+    display: none;
+}
 .left ul{
     display: flex;
     align-items: center;
@@ -106,6 +112,9 @@ nav .nav-left button{
     border-color: #323232;
     border-radius: 4px;
     
+}
+.next_hamburger{
+    display: none
 }
 .sub-nav{
     padding-right: 20px;
@@ -201,6 +210,12 @@ nav .nav-left button{
     .nav-top{
         width: 100%;
     }
+    .nav-top .top_search{
+        display: block;
+    }
+    .nav-top button{
+        display: block;
+    }
     .left ul{
         display: none; 
     }
@@ -219,6 +234,9 @@ nav .nav-left button{
     nav .nav-left button{
         display: none;
 }
+.next_hamburger{
+    display: block
+}
 .sub-nav a{
     display: none;
  }
@@ -230,5 +248,9 @@ nav .nav-left button{
  }
  .nav-bottom{
     display: none;
+ }
+ #card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
  }
 }
