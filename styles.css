@@ -211,4 +211,24 @@ nav .nav-left button{
         padding: 8px;
         display: block;
     }
+    nav .nav-left .search{
+       
+        display: none;
+    
+    }
+    nav .nav-left button{
+        display: none;
+}
+.sub-nav a{
+    display: none;
+ }
+ .sub-nav .fa-angle-down{
+    display: none;
+ }
+ .sub-nav span{
+    display: none;
+ }
+ .nav-bottom{
+    display: none;
+ }
 }
