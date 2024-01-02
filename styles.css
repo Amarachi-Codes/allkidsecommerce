@@ -180,4 +180,14 @@ nav .nav-left button{
     grid-template-columns: repeat(5,1fr);
     color: #000;
     gap: 10px;
+    font-size: small;
+    /* text-align: center; */
+    border-radius: 10px; 
+    border: 1px solid grey;
+    margin: 0 20px; 
+    padding: 20px;
+}
+
+.dashboard{
+    margin: 24px 68px;
 }
