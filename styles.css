@@ -50,6 +50,9 @@
     color: #000;
     font-size: x-small;
 }
+.first_hamburger{
+    display: none;
+}
 .nav-container{
      background-color:  #b1eb00;
     /* background-color: #6acdee ; */
@@ -193,6 +196,7 @@ nav .nav-left button{
 }
 
 
+
 @media screen and (max-width:912px) {
     .nav-top{
         width: 100%;
@@ -205,5 +209,6 @@ nav .nav-left button{
     }
     .first_hamburger {
         padding: 8px;
+        display: block;
     }
 }
