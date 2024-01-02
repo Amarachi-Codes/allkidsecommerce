@@ -23,13 +23,23 @@ if(productname && productprice && vendorname && image){
 }else{
     alert("please enter product details")
 }
+
+
 }
-const form = document.getElementById("form")
-form.addEventListener("submit", addProduct);
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("form");
+    form.addEventListener("submit", addProduct);
+    displayProducts();
+});
+  
+
 
 function generateId(){
     return "^"+ Math.random().toString(36).substring(2, 9);
 }
+
+
+
 
 function displayProducts(){
     const card = document.getElementById("card");
