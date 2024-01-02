@@ -212,9 +212,17 @@ nav .nav-left button{
     }
     .nav-top .top_search{
         display: block;
+        width: 220px;
+        padding: 2px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        margin-right: 12px;
     }
     .nav-top button{
         display: block;
+        padding: 2px 10px;
+        border-radius: 10px;
+        border: 1px solid #fff;
     }
     .left ul{
         display: none; 
@@ -223,7 +231,7 @@ nav .nav-left button{
         display: none;
     }
     .first_hamburger {
-        padding: 8px;
+        padding: 12px;
         display: block;
     }
     nav .nav-left .search{
