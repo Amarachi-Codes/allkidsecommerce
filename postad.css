@@ -59,7 +59,7 @@
     /* background-color: #323232; */
     background-color: #FA4EAB;
     /* color: #fff; */
-    color: #000;
+    color: #fff;
 
 }
 .form-heading .clear:hover{
@@ -96,7 +96,7 @@ margin: 0 10px;
 .form_submit{
     /* background-color: #323232; */
     background-color: #FA4EAB;
-    color: black;
+    color: #fff;
     margin-bottom: 20px;
     cursor: pointer;
     
