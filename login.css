@@ -75,3 +75,6 @@
         font-weight: bold;
         color: #FA4EAB;
     }
+    .error{
+        color: red;
+    }
