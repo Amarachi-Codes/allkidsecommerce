@@ -71,25 +71,27 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (event) => {
         event.preventDefault();
         validateForm()
-    })
-})
+    });
+});
 
 function validateForm() {
-    isValid = true;
-    if (!validateUsername) {
+    let isValid = true;
+    if (!validateUsername()) {
         isValid = false
     }
-    if (!validatePassword) {
+    if (!validatePassword()) {
         isValid = false
     }
     if (isValid) {
         alert("form successfully submitted")
+        username.value="";
+        password.value="";
     }
 }
 
 
 function validateUsername() {
-    const username = document.getElementById("username");
+    const username = document.getElementById("username").value.trim();
     const username_error = document.getElementById("username_error")
     if (username === "") {
         username_error.textContent = "Username cannot be empty "
@@ -102,9 +104,9 @@ function validateUsername() {
 }
 
 function validatePassword() {
-    const password = document.getElementById("password");
+    const password = document.getElementById("password").value;
     const password_error = document.getElementById("password_error");
-    if (password < 5) {
+    if (password.length < 5) {
         password_error.textContent = "Password length must be greater than 5 characters"
         return false
     } else {
