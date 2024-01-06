@@ -42,7 +42,7 @@ function generateId() {
 
 
 function displayProducts() {
-    const card = document.getElementById("#card");
+    const card = document.getElementById("card");
     card.innerHTML = "";
     const products = JSON.parse(localStorage.getItem("products")) || []
 
@@ -67,7 +67,7 @@ displayProducts()
 
 // login validation
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("#user_form");
+    const form = document.getElementById("user_form");
     form.addEventListener("submit", (event) => {
         event.preventDefault();
         validateForm()
@@ -89,8 +89,8 @@ function validateForm() {
 
 
 function validateUsername() {
-    const username = document.getElementById("#username");
-    const username_error = document.getElementById("#username_error")
+    const username = document.getElementById("username");
+    const username_error = document.getElementById("username_error")
     if (username === "") {
         username_error.textContent = "Username cannot be empty "
         return false
@@ -102,8 +102,8 @@ function validateUsername() {
 }
 
 function validatePassword() {
-    const password = document.getElementById("#password");
-    const password_error = document.getElementById("#password_error");
+    const password = document.getElementById("password");
+    const password_error = document.getElementById("password_error");
     if (password < 5) {
         password_error.textContent = "Password length must be greater than 5 characters"
         return false
