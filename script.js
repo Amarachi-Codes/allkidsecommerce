@@ -6,6 +6,7 @@ function addProduct(event) {
     const productprice = document.getElementById("productprice").value.trim()
     const vendorname = document.getElementById("vendorname").value.trim().toLowerCase()
     const imageurl = document.getElementById("imgUrl").value
+   
 
     if (productname && productprice && vendorname && imageurl) {
         const product = {
@@ -29,7 +30,7 @@ function addProduct(event) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("form");
+    const form = document.querySelector("#productForm");
    
     console.log(form);
     form.addEventListener("submit", addProduct);
