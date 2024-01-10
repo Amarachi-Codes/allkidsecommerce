@@ -1,9 +1,9 @@
 function addProduct(event) {
     event.preventDefault()
     const productname = document.getElementById("productname").value.trim().toUpperCase();
-    const productprice = document.getElementById("productprice").value.trim;
-    const vendorname = document.getElementById("vendorname").value.trim.toLowerCase()
-    const imgUrl = document.getElementById("imgUrl").value.trim.toLowerCase()
+    const productprice = document.getElementById("productprice").value.trim();
+    const vendorname = document.getElementById("vendorname").value.trim().toLowerCase();
+    const imgUrl = document.getElementById("imgUrl").value.trim().toLowerCase();
 
     if (productname && productprice && vendorname && imgUrl) {
         const product = {
@@ -35,6 +35,7 @@ function displayProducts() {
 
         const productList = document.createElement("div");
         productList.classList.add("product");
+        
 
         const nameOfProduct = document.createElement("h3");
         nameOfProduct.textContent=`${product.pName}`
