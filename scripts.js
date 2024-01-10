@@ -53,9 +53,9 @@ function displayProducts() {
         productList.appendChild(priceOfProduct)
         productList.appendChild(nameOfVendor)
         
-        dashboard.appendChild(productList) 
+         dashboard.appendChild(productList) 
     })
-    
+    displayProducts()
    
 }
 function generateId() {
