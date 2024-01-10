@@ -1,18 +1,19 @@
 
+    
 function addProduct(event) {
     event.preventDefault()
     const productname = document.getElementById("productname").value.trim().toUpperCase()
     const productprice = document.getElementById("productprice").value.trim()
     const vendorname = document.getElementById("vendorname").value.trim().toLowerCase()
-    const image = document.getElementById("img").value
+    const imageurl = document.getElementById("imgUrl").value
 
-    if (productname && productprice && vendorname && image) {
+    if (productname && productprice && vendorname && imageurl) {
         const product = {
             id: generateId(),
             pName: productname,
             price: "N" + productprice,
             vName: vendorname,
-            img: image
+            img: imageurl
         }
         let products = JSON.parse(localStorage.getItem("products")) || []
         products.push(product)
@@ -26,10 +27,19 @@ function addProduct(event) {
 
 
 }
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form");
+   
+    console.log(form);
     form.addEventListener("submit", addProduct);
     displayProducts();
+
+    const userForm = document.getElementById("user_form");
+    userForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        validateForm()
+    });
 });
 
 
@@ -51,7 +61,7 @@ function displayProducts() {
         const divtags = document.createElement("div");
 
         divtags.innerHTML = `
-        <img src=${product.img}<br>
+        <img src=img/${product.img}<br>
         <p>${product.pName}</p>
         <p>${product.price}</p>
         <p>${product.vName}</p>
@@ -66,13 +76,13 @@ displayProducts()
 
 
 // login validation
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("user_form");
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        validateForm()
-    });
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     const userForm = document.getElementById("user_form");
+//     userForm.addEventListener("submit", (event) => {
+//         event.preventDefault();
+//         validateForm()
+//     });
+// });
 
 function validateForm() {
     let isValid = true;
@@ -115,4 +125,6 @@ function validatePassword() {
     }
 
 }
+
+
 
