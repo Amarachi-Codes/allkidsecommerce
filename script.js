@@ -58,6 +58,8 @@ function displayProducts() {
     //create p items
     products.forEach((product) => {
         const divtags = document.createElement("div");
+        divtags.classList.add("item");
+        
 
         divtags.innerHTML = `
         <img src=img/${product.img}><br>
