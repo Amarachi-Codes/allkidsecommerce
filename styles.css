@@ -16,10 +16,11 @@
 }
 .item{
     border: 1px solid red;
+    text-align: center;
 }
 .myimg{
-    width: 45px;
-    height: 45px;
+    width: 78px;
+    height: 78px;
 }
 
 .nav-top{
