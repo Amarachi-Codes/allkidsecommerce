@@ -62,7 +62,7 @@ function displayProducts() {
         
 
         divtags.innerHTML = `
-        <img src=img/${product.img}><br>
+        <img src=img/${product.img} class="myimg"><br>
         <p>${product.pName}</p>
         <p>${product.price}</p>
         <p>${product.vName}</p>

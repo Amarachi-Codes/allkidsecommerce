@@ -17,6 +17,10 @@
 .item{
     border: 1px solid red;
 }
+.myimg{
+    width: 45px;
+    height: 45px;
+}
 
 .nav-top{
     display: flex;
