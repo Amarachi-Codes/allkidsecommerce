@@ -63,9 +63,9 @@ function displayProducts() {
 
         divtags.innerHTML = `
         <img src=img/${product.img} class="myimg"><br>
-        <p>${product.pName}</p>
-        <p>${product.price}</p>
-        <p>${product.vName}</p>
+        <p class="productSpecify">${product.pName}</p>
+        <p class="productSpecify">${product.price}</p>
+        <p class="productSpecify">${product.vName}</p>
 
         `;
         card.appendChild(divtags);

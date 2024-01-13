@@ -18,9 +18,13 @@
     border: 1px solid red;
     text-align: center;
 }
+.productSpecify{
+    margin-bottom: 8px;
+}
 .myimg{
     width: 78px;
     height: 78px;
+    margin: 8px 0;
 }
 
 .nav-top{
