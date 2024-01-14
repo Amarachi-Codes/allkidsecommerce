@@ -12,7 +12,7 @@ function addProduct(event) {
         const product = {
             id: generateId(),
             pName: productname,
-            price: "N" + productprice,
+            price: productprice,
             vName: vendorname,
             img: imageurl,
         };
@@ -64,8 +64,8 @@ function displayProducts() {
         divtags.innerHTML = `
         <img src=img/${product.img} class="myimg"><br>
         <p class="productSpecify">${product.pName}</p>
-        <p class="productSpecify">${product.price}</p>
-        <p class="productSpecify"><span>sold by </span>${product.vName}</p>
+        <p class="productSpecify"><span>&#8358</span>${product.price}</p>
+        <p class="productSpecify"><span class="seller">Sold by </span>${product.vName}</p>
         <span class="material-symbols-outlined productSpecify">shopping_cart</span>
 
         `;

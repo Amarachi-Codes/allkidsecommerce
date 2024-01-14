@@ -219,6 +219,10 @@ nav .nav-left button{
 .dashboard{
     margin: 24px 86px;
 }
+.seller{
+    color: grey;
+    font-size: smaller;
+}
 
 
 
