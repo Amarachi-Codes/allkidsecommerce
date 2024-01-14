@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+body{
+    background-color: whitesmoke;
+}
 .topContainer{
     
     background-color: #FA4EAB;
@@ -17,6 +20,7 @@
 .item{
     border: 1px solid gainsboro;
     border-radius: 10px;
+    background-color: white;
 }
 .item:hover{
     /* text-align: center; */
