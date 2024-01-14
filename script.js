@@ -65,8 +65,8 @@ function displayProducts() {
         <img src=img/${product.img} class="myimg"><br>
         <p class="productSpecify">${product.pName}</p>
         <p class="productSpecify">${product.price}</p>
-        <p class="productSpecify">${product.vName}</p>
-        <span class="material-symbols-outlined">shopping_cart</span>
+        <p class="productSpecify"><span>sold by </span>${product.vName}</p>
+        <span class="material-symbols-outlined productSpecify">shopping_cart</span>
 
         `;
         card.appendChild(divtags);

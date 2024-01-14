@@ -15,16 +15,22 @@
     
 }
 .item{
-    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.item:hover{
+    /* text-align: center; */
    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
 }
 .productSpecify{
     margin-bottom: 8px;
+    padding: 0 12px;
 }
 .myimg{
-    width: 78px;
-    height: 78px;
+    width: 210px;
+    height: 180px;
     margin: 8px 0;
+    object-fit: contain;
 }
 
 .nav-top{
@@ -204,17 +210,14 @@ nav .nav-left button{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     color: #000;
-    gap: 10px;
+    gap: 20px;
     font-size: small;
-    /* text-align: center; */
-    border-radius: 10px; 
-    border: 1px solid grey;
     margin: 0 20px; 
     padding: 20px;
 }
 
 .dashboard{
-    margin: 24px 68px;
+    margin: 24px 86px;
 }
 
 
