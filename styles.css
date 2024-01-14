@@ -11,8 +11,7 @@ body{
     background-color: whitesmoke;
 }
 .topContainer{
-    
-    background-color: #FA4EAB;
+    /* background-color: #FA4EAB; */
     position: sticky;
     top:0
     
@@ -63,7 +62,7 @@ body{
 }
 .left ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: x-small;
 }
 .right ul{
@@ -76,7 +75,7 @@ body{
 }
 .right ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: x-small;
 }
 .first_hamburger{
