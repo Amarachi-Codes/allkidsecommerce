@@ -6,7 +6,7 @@ function addProduct(event) {
     const productprice = document.getElementById("productprice").value.trim()
     const vendorname = document.getElementById("vendorname").value.trim().toLowerCase()
     const imageurl = document.getElementById("imgUrl").value.trim().toLowerCase()
-   
+   const discount= document.getElementById("discount").value.trim()
 
     if (productname && productprice && vendorname && imageurl) {
         const product = {
@@ -15,6 +15,7 @@ function addProduct(event) {
             price: productprice,
             vName: vendorname,
             img: imageurl,
+            dis: discount,
         };
         let products = JSON.parse(localStorage.getItem("products")) || [];
         products.push(product);
@@ -62,6 +63,10 @@ function displayProducts() {
         
 
         divtags.innerHTML = `
+        <div class = "dis">
+        <span>${product.dis}%</span>
+        <br><span>off</span>
+        </div>
         <img src=img/${product.img} class="myimg"><br>
         <p class="productSpecify">${product.pName}</p>
         <p class="productSpecify"><span>&#8358</span>${product.price}</p>
