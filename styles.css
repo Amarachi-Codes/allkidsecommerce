@@ -24,8 +24,13 @@ body{
     border-bottom-right-radius: 10px;
     
 }
-
-
+.img-style{
+    height: 350px;
+    object-fit: contain;
+}
+.img-bg{
+    background-color: #6acdee;
+}
 .item{
     border: 1px solid gainsboro;
     border-radius: 10px;

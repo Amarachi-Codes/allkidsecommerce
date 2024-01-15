@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="dashboard.css">
+
     <title>Kiddo</title>
 </head>
 
@@ -31,31 +33,32 @@
         </div>
     </div> -->
     <div class="nav-container">
-    <nav>
-        <div class="next_hamburger "><i class="fa-solid fa-bars"></i></div>
-        <div class="logo">
-            Kiddo
-        </div>
-        <div class="nav-left">
-            <input type="search" name="search" class="search" id="" placeholder="Search products, brands and categories">
-            <button>Search</button>
-            <div class="sub-nav">
-                <a href="#">Home</a>
+        <nav>
+            <div class="next_hamburger "><i class="fa-solid fa-bars"></i></div>
+            <div class="logo">
+                Kiddo
             </div>
-            <div class="sub-nav">
-                <span>Products</span>
+            <div class="nav-left">
+                <input type="search" name="search" class="search" id=""
+                    placeholder="Search products, brands and categories">
+                <button>Search</button>
+                <div class="sub-nav">
+                    <a href="#">Home</a>
+                </div>
+                <div class="sub-nav">
+                    <span>Products</span>
+                </div>
+                <div class="sub-nav">
+                    <a href="https://wa.me/message/G46N5SLTXOQJL1">Support</a>
+                </div>
+                <div class="sub-nav">
+                    <i class="fa-solid fa-cart-shopping"></i>&nbsp
+                    <span>Cart</span>
+                </div>
+
             </div>
-            <div class="sub-nav">
-                <a href="https://wa.me/message/G46N5SLTXOQJL1">Support</a>
-            </div>
-            <div class="sub-nav">
-                <i class="fa-solid fa-cart-shopping"></i>&nbsp
-                <span>Cart</span>
-            </div>
-            
-        </div>
-    </nav>
-</div>
+        </nav>
+    </div>
     <div class="nav-bottom">
         <a href="">All Categories &nbsp<i class="fa-solid fa-bars"></i></a>
         <a href="login.html">Sign in</a>
@@ -68,20 +71,45 @@
         <a href="">Kids Beddings & Decor</a>
         <a href="">Toys</a> -->
     </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active img-bg" data-bs-interval="10000">
+                <img src="img/flyerwhite.png" class="d-block w-100 img-style" alt="...">
+            </div>
+            <div class="carousel-item img-bg" data-bs-interval="2000">
+                <img src="img/flyer2.png" class="d-block w-100 img-style" alt="...">
+            </div>
+            <div class="carousel-item img-bg">
+                <img src="img/flyer3.png" class="d-block w-100 img-style" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     <div class="dashboard_title">
         <h3>Amazing Deals Online</h3>
     </div>
-     <div class="dashboard">
+    <div class="dashboard">
         <div class="card_container">
-        <div id="card">
+            <div id="card">
+
+            </div>
 
         </div>
-       
-    </div> 
-    <!-- <div id="myDashboard">
+        <!-- <div id="myDashboard">
         
     </div> -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
