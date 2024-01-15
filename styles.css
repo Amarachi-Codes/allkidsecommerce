@@ -34,7 +34,7 @@ body{
 }
 .img-bg{
     /* background-color: #6acdee; */
-    background: radial-gradient(#fff, var(--bg-color-2))
+    background: radial-gradient(#fff, var(--bg-color-2));
 }
 .item{
     border: 1px solid gainsboro;
@@ -105,6 +105,7 @@ body{
     /* background-color: #3b91e6; */
      /* background-color:  #b1eb00; */
     background-color: #6acdee ;
+    
     /* background-color: #FFF2F9;  */
     /* background-color: #c02415; */
     
