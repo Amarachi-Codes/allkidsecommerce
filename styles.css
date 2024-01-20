@@ -29,8 +29,8 @@ body{
     
 }
 .img-style{
-    height: 350px;
-    object-fit: contain;
+    height: 450px;
+    object-fit: cover;
 }
 .img-bg{
     /* background-color: #6acdee; */
@@ -248,6 +248,15 @@ nav .nav-left button{
     color: grey;
     font-size: smaller;
 }
+
+.discount-wrapper{
+    margin-top: 5rem;
+}
+.discount-wrapper img{
+    height: 18rem;
+    width: 100%; 
+} 
+
 
 
 
