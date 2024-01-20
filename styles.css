@@ -251,13 +251,29 @@ nav .nav-left button{
 
 .discount-wrapper{
     margin-top: 5rem;
-    margin-bottom: 2rem;
+    
 }
 .discount-wrapper img{
     height: 18rem;
     width: 100%; 
 } 
-
+.img_content{
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    color: #fff;
+}
+.img_content h3{
+ margin-bottom: 1rem;
+}
+.img_content h3 span{
+    color: #6acdee;
+}
+.img_content button{
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
 
 
 
