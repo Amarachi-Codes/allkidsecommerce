@@ -71,7 +71,7 @@ function displayProducts() {
         <p class="productSpecify">${product.pName}</p>
         <p class="productSpecify"><span>&#8358</span>${product.price}</p>
         <p class="productSpecify"><span class="seller">Sold by </span>${product.vName}</p>
-        <span class="material-symbols-outlined productSpecify">shopping_cart</span>
+        <button onclick="cart('${product.id}')"><span class="material-symbols-outlined productSpecify" >shopping_cart</span></button>
 
         `;
         card.appendChild(divtags);
@@ -85,7 +85,7 @@ function cart(productId){
     const products = JSON.parse(localStorage.getItem("products")) || [];
     const product = products.find((product)=>product.id === productId);
     if(product){
-        isProductInCart=addCartItem.some((cartItem)=> cartItem.id === product.Id);
+        const isProductInCart=addCartItem.some((cartItem)=> cartItem.id === product.id);
         if(!isProductInCart){
             addCartItem.push(product);
             showCart();
@@ -95,7 +95,14 @@ function cart(productId){
 
 function showCart(){
     let mycart = document.getElementById("mycart");
+    mycart.textContent = "";
+    addCartItem.forEach((cart)=>{
+        let li = document.createElement("li");
+        li.textContent = `${cart.img}-${cart.pName}-${cart.price}-${cart.dis}`;
+        mycart.appendChild(li);
+    })
 }
+showCart();
 // login validation
 // document.addEventListener("DOMContentLoaded", () => {
 //     const userForm = document.getElementById("user_form");
