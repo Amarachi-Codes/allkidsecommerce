@@ -81,7 +81,9 @@ function displayProducts() {
 }
 displayProducts()
 
-
+function showCart(){
+    
+}
 // login validation
 // document.addEventListener("DOMContentLoaded", () => {
 //     const userForm = document.getElementById("user_form");
