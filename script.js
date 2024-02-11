@@ -6,9 +6,9 @@ function addProduct(event) {
     const productprice = document.getElementById("productprice").value.trim()
     const vendorname = document.getElementById("vendorname").value.trim().toLowerCase()
     const imageurl = document.getElementById("imgUrl").value.trim().toLowerCase()
-   const discount= document.getElementById("discount").value.trim()
-
-    if (productname && productprice && vendorname && imageurl) {
+    const discount= document.getElementById("discount").value.trim()
+    const category = document.getElementById("category").value.trim()
+    if (productname && productprice && vendorname && imageurl && category === "amazing deals online") {
         const product = {
             id: generateId(),
             pName: productname,
@@ -23,7 +23,23 @@ function addProduct(event) {
         document.getElementById("productForm").reset();
         alert("product sucessfully added");
         displayProducts();
-    } else {
+    } else if(productname && productprice && vendorname && imageurl && category === "new arivals"){
+        const product = {
+            id: generateId(),
+            pName: productname,
+            price: productprice,
+            vName: vendorname,
+            img: imageurl,
+            dis: discount,
+        };
+        let products = JSON.parse(localStorage.getItem("products")) || [];
+        products.push(product);
+        localStorage.setItem("products", JSON.stringify(products));
+        document.getElementById("productForm").reset();
+        alert("product sucessfully added");
+        displayNewArrival();
+        // console.log(category);
+    }else {
         alert("please enter product details");
     }
 }
@@ -71,7 +87,7 @@ function displayProducts() {
         <p class="productSpecify">${product.pName}</p>
         <p class="productSpecify"><span>&#8358</span>${product.price}</p>
         <p class="productSpecify"><span class="seller">Sold by </span>${product.vName}</p>
-        <button onclick="cart('${product.id}')"><span class="material-symbols-outlined productSpecify" >shopping_cart</span></button>
+        <button class="cartbtn" onclick="cart('${product.id}')"><span class="material-symbols-outlined productSpecify" >shopping_cart</span></button>
 
         `;
         card.appendChild(divtags);
@@ -81,6 +97,37 @@ function displayProducts() {
 }
 displayProducts()
 
+
+function displayNewArrival() {
+    const newcard = document.getElementById("newcard");
+    newcard.innerHTML = "";
+    const products = JSON.parse(localStorage.getItem("products")) || [];
+
+    //create p items
+    products.forEach((product) => {
+        const newcardtags = document.createElement("div");
+        newcardtags.classList.add("item");
+        
+
+        newcardtags.innerHTML = `
+        <div class = "dis">
+        <span>${product.dis}%</span>
+        <br><span>off</span>
+        </div>
+        <img src=img/${product.img} class="myimg"><br>
+        <p class="productSpecify">${product.pName}</p>
+        <p class="productSpecify"><span>&#8358</span>${product.price}</p>
+        <p class="productSpecify"><span class="seller">Sold by </span>${product.vName}</p>
+        <button class="cartbtn" onclick="cart('${product.id}')"><span class="material-symbols-outlined productSpecify" >shopping_cart</span></button>
+
+        `;
+        newcard.appendChild(newcardtags);
+
+    });
+
+}
+displayNewArrival()
+
 function cart(productId){
     const products = JSON.parse(localStorage.getItem("products")) || [];
     const product = products.find((product)=>product.id === productId);
@@ -88,6 +135,7 @@ function cart(productId){
         const isProductInCart=addCartItem.some((cartItem)=> cartItem.id === product.id);
         if(!isProductInCart){
             addCartItem.push(product);
+            // console.log(addCartItem);
             showCart();
         }
     }
@@ -95,13 +143,15 @@ function cart(productId){
 
 function showCart(){
     let mycart = document.getElementById("mycart");
-    mycart.textContent = "";
+     mycart.textContent = "";
     addCartItem.forEach((cart)=>{
         let li = document.createElement("li");
         li.textContent = `${cart.img}-${cart.pName}-${cart.price}-${cart.dis}`;
         mycart.appendChild(li);
-    })
+        // console.log(mycart);
+    });
 }
+console.log(showCart());
 showCart();
 // login validation
 // document.addEventListener("DOMContentLoaded", () => {
