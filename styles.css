@@ -334,6 +334,12 @@ nav .nav-left button{
 .signup-input{
     padding: 4px 8px;
 }
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 80px;
+}
 
 @media screen and (max-width:912px) {
     .nav-top{
